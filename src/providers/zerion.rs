@@ -224,7 +224,7 @@ impl HistoryProvider for ZerionProvider {
                     sent_to: f.attributes.sent_to,
                     status: f.attributes.status,
                 },
-                transfers: f.attributes.transfers,
+                transfers: Some(f.attributes.transfers),
             })
             .collect();
 
